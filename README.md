@@ -1,1 +1,1 @@
-# Introdução ao GIT
+# Resolução dos exercícios do curso React ao PRO
