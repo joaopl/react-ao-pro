@@ -1,1 +1,0 @@
-# Resolução dos exercícios do curso React ao PRO
