@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulário exercício 3</title>
     <link rel='stylesheet' type='text/css'  href='src/style.css'> 
 </head>
 <body>
@@ -27,17 +27,21 @@
                 <input type="radio" id="casado" name="status" value="casado">
                 <label for="casado">Casado</label>
         
-                <label for="interesses" class="interesses">Interesses:</label>
-                <input type="checkbox" id="esporte" name="interesses" value="esporte">
-                <label for="esporte">Esporte</label>
-                <input type="checkbox" id="musica" name="interesses" value="musica">
-                <label for="musica">Música</label>
-                <input type="checkbox" id="viagem" name="interesses" value="viagem">
-                <label for="viagem">Viagem</label>
-                <input type="checkbox" id="outros" name="outros" value="outros" checked>
-                <label for="viagem">Outros</label>
+            
+
+                
+                    <label for="interesses" class="interesses">Interesses:</label>
+                    <input type="checkbox" id="esporte" name="interesses" value="esporte">
+                    <label for="esporte">Esporte</label>
+                    <input type="checkbox" id="musica" name="interesses" value="musica">
+                    <label for="musica">Música</label>
+                    <input type="checkbox" id="viagem" name="interesses" value="viagem">
+                    <label for="viagem">Viagem</label>
+                    <input type="checkbox" id="outros" name="interesses" value="outros">
+                    <label for="viagem">Outros</label>
+              
         
-                <button type="button" onclick="enviarFormulario()">Enviar</button>
+                <button type="button" onclick="enviarFormulario(event)">Enviar</button>
             </form>
         </div>
     
@@ -45,7 +49,6 @@
         <table id="tabelaRespostas">
             <tr>
                 <th>Nome</th>
-                <th>Email</th>
                 <th>Sexo</th>
                 <th>Estado Civil</th>
                 <th>Interesses</th>
