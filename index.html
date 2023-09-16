@@ -8,48 +8,52 @@
 <body>
     <h1>Formulário exercício 3</h1>
 
-    <div class="formulario">
-        <form id="meuForm">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+    <div class="container">
+        <div class="formulario">
+            <form id="meuForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="masculino" >Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+        
+                <label for="status" class="status">Estado Civil:</label>
+                <input type="radio" id="solteiro" name="status" value="solteiro" required>
+                <label for="solteiro">Solteiro</label>
+                <input type="radio" id="casado" name="status" value="casado">
+                <label for="casado">Casado</label>
+        
+                <label for="interesses" class="interesses">Interesses:</label>
+                <input type="checkbox" id="esporte" name="interesses" value="esporte">
+                <label for="esporte">Esporte</label>
+                <input type="checkbox" id="musica" name="interesses" value="musica">
+                <label for="musica">Música</label>
+                <input type="checkbox" id="viagem" name="interesses" value="viagem">
+                <label for="viagem">Viagem</label>
+                <input type="checkbox" id="outros" name="outros" value="outros" checked>
+                <label for="viagem">Outros</label>
+        
+                <button type="button" onclick="enviarFormulario()">Enviar</button>
+            </form>
+        </div>
     
-            <label for="sexo">Sexo:</label>
-            <select id="sexo" name="sexo" required>
-                <option value="masculino" >Masculino</option>
-                <option value="feminino">Feminino</option>
-                <option value="outro">Outro</option>
-            </select>
-    
-            <label for="status">Estado Civil:</label>
-            <input type="radio" id="solteiro" name="status" value="solteiro" required>
-            <label for="solteiro">Solteiro</label>
-            <input type="radio" id="casado" name="status" value="casado">
-            <label for="casado">Casado</label>
-    
-            <label for="interesses">Interesses:</label>
-            <input type="checkbox" id="esporte" name="interesses" value="esporte">
-            <label for="esporte">Esporte</label>
-            <input type="checkbox" id="musica" name="interesses" value="musica">
-            <label for="musica">Música</label>
-            <input type="checkbox" id="viagem" name="interesses" value="viagem">
-            <label for="viagem">Viagem</label>
-            <input type="checkbox" id="outros" name="outros" value="outros" checked>
-            <label for="viagem">Outros</label>
-    
-            <button type="button" onclick="enviarFormulario()">Enviar</button>
-        </form>
+        <!-- Tabela de Respostas -->
+        <table id="tabelaRespostas">
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Sexo</th>
+                <th>Estado Civil</th>
+                <th>Interesses</th>
+            </tr>
+        </table>
     </div>
 
-    <!-- Tabela de Respostas -->
-    <table id="tabelaRespostas">
-        <tr>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Sexo</th>
-            <th>Estado Civil</th>
-            <th>Interesses</th>
-        </tr>
-    </table>
+
 
     <script src='src/main.js'></script>
 </body>
